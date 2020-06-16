@@ -1,43 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*MOBILE*/
+
+/*setting the general colour and font*/
 body {
     background-color: #F7F7FF;
     font-family: 'Montserrat', sans-serif;
 }
+/*logo adjustments*/
 .logo {
     width: 70px;
     height: auto;
     margin-top: 1rem;
     margin-left: 2rem;
 }
+/*adding the background image*/
 .wrapper {
     background-image: url(../images/bg-image/scooter.svg);
     background-repeat: no-repeat;
     margin: auto;
-    width: 80%;
+    width: 85%;
     height: auto;
     background-position: center;
 }
-
+/*heading text adjusted*/
 h1 {
     margin-top: 2.5rem;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color:#333131;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
+/*creating colour for form*/
 div.form {
     margin-top: 25rem;
     background-color: #fff;
     text-align: center;
 }
+
 .apply {
     font-weight: 900;
     color: #333131;
     font-size: 25px;
     margin-bottom: 0.5rem;
 }
+
 .form {
     border: 10px solid white;
     border-radius: 25px;
@@ -54,12 +63,14 @@ input {
     width: 85%;
     height: 40px;
 }
+
 .agree {
     margin: 0;
     width: auto;
     height: auto;
     margin-right: 0.5rem;
 }
+
 input.submit {
     background-color: #57EEAB;
     font-family: 'Montserrat', sans-serif;
@@ -68,34 +79,41 @@ input.submit {
     color: #333131;
     margin: 0.5rem;
 }
+
 .check {
     color: #FF8480;
 }
+/*footer styles*/
 footer {
     background-color: #FFFD8C;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
 .see {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin: 1rem; 
     font-weight: 900;
 }
+
 .many {
     margin: 1rem;
     font-weight: lighter;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
+
 #hours {
     width: 15%;
     margin: 1rem;
 }
+
 #city {
     width: 60%;
     margin: 1rem;
 }
+
 .cal {
     background-color: #FF8480;
     font-family: 'Montserrat', sans-serif;
@@ -107,63 +125,98 @@ footer {
     margin: auto;
     margin-left: 1rem;
 }
+
 .icons {
     text-align: center;
+    margin: 2rem;
 }
+
 .facebook, .instagram, .twitter, .linkedin {
     margin-right: 2rem;
 }
+
+/*TABLET*/
+
 @media (min-width: 768px) {
+    /*Adjusting the sizing of inputs*/
   .cal {
       width: 27%;
   }
+  
   #hours {
       width: 13%;
   }
+
   #city {
       width: 25%;
   }
+
   .foot {
       text-align: center;
   }
+
   p.see {
       margin-left: 12rem;
   }
+
   p.many {
       margin-left: 12rem;
   }
+
+  .icons {
+      margin: 2rem;
+  }
 }
+/*DESKTOP*/
 
 @media (min-width: 968px) {
+    /*adjsuting the footer changes*/
     .cal {
         width: 20%;
     }
+
     #hours {
         width: 10%;
         margin-left: 2rem;
     }
+
     #city {
         width: 18%;
     }
+    
     .foot {
         text-align: left;
         margin-left: 10rem;
     }
+    /*fixing form margin of other views*/
     div.form {
         margin-top: 0;
         background-color: #fff;
         text-align: center;
     }
+    /*making the grid columns*/
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-bottom: 2.5rem;
     }
+    /*adjusting texts in this view*/
     .icons {
         margin-top: 5rem;
+    }
+
+    h1 {
+        margin-top: 5rem;
+        font-size: 55px;
+    }
+
+    .content {
+        margin-top: 3rem;
+        margin-left: 1rem;
     }
 }
