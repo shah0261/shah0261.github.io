@@ -8,6 +8,7 @@
     <title>Landing</title>
 </head>
 <body>
+    <div class="wrapper">
     <header>
         <!--brands logo, designed by myself-->
         <img class="logo" src="images/logo/logo.png" alt="logo">
@@ -17,33 +18,32 @@
         <p class="content">Start today and make up to $30/hr driving your own vehicle with Dash! </P>
         <P class="content">Safe. Secure. Reliable. </p> 
     </div>
-    <main>
-        <div class="form">
-            <p class="apply">Apply Now</p>
-            <p class="info">Enter your info below to get started.</p>
-            <form method="get" action="contact.html">
-                <fieldset>
-                    <input type="text" name="fname" id="fname" placeholder="First Name">
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="lname" id="lname" placeholder="Last Name">
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="email" id="email" placeholder="Email address">
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="phone" id="phone" placeholder="Phone number">
-                </fieldset>
-                <fieldset>
-                    <input type="checkbox" name="agree" value="yes" class="agree">I agree to dash terms</fieldset>
-                <fieldset>
-                    <input type="submit" class="submit" value="DRIVE WITH US">
-                </fieldset>
-            </form>
-            <p class="already">Already applied?</p>
-            <p class="check">Check your application status here</p>
-        </div>
-    </main>  
+    <div class="form">
+        <p class="apply">Apply Now</p>
+        <p class="info">Enter your info below.</p>
+        <form method="get" action="contact.html">
+            <fieldset>
+                <input type="text" name="fname" id="fname" placeholder="First Name">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="email" id="email" placeholder="Email address">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="phone" id="phone" placeholder="Phone number">
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="agree" value="yes" class="agree">I agree to dash terms</fieldset>
+            <fieldset>
+                <input type="submit" class="submit" value="DRIVE WITH US">
+            </fieldset>
+        </form>
+        <p class="already">Already applied?</p>
+        <p class="check">Check your application status here</p>
+    </div>  
+</div>
 </body>
 <footer>
     <p class="see">See how much you can earn with Dash.</p>
@@ -51,17 +51,17 @@
     <form>
     <fieldset>
         <input type="text" name="hours" id="hours" placeholder="Hours">
-    </fieldset>
-    <fieldset>
         <input type="text" name="city" id="city" placeholder="City">
     </fieldset>
     <fieldset>
-        <input type="submit" class="submit" value="CALCULATE">
+        <input type="submit" class="cal" value="CALCULATE">
     </fieldset>
 </form>
-    <img src="images/icons/facebook.svg" alt="facebook">
-    <img src="images/icons/instagram.svg" alt="instagram">
-    <img src="images/icons/twitter.svg" alt="twitter">
-    <img src="images/icons/linkedin.svg" alt="linkedin">
+<div class="icons">
+    <img src="images/icons/facebook.svg" class="facebook" alt="facebook">
+    <img src="images/icons/instagram.svg" class="instagram" alt="instagram">
+    <img src="images/icons/twitter.svg" class="twitter" alt="twitter">
+    <img src="images/icons/linkedin.svg" class="linkedin" alt="linkedin">
+</div>
 </footer>
 </html>
