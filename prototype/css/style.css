@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Aclonica|Arapey|Lora&display=swap');
 
-/* Mobile */
+/* Mobile view designed first */
 
 main {
     background-color: #fff4f3;
     padding: 1rem;
     font-family: 'Lora', serif;  
 }
-/*Navigation */
+/*Navigation bar is set the same color as body for minimal design*/
 
 nav {
     background-color: #fff4f3;
@@ -34,7 +34,7 @@ li:hover {
     font-style: italic;
 }
 
-/* Header, Footer */
+/* Header, Footer set as the body color */
 
 header {
     background-color: #fff4f3;
@@ -186,6 +186,7 @@ fieldset {
   justify-content: center;
   position:relative
 }
+/*Animation for a button of header*/
 
 @keyframes start {
     20% {
@@ -258,7 +259,7 @@ fieldset {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* images */
+    /* images fixing the responsivness*/
 
     .bag, .birthday, .wedding, .cookies, .toast, .special {
         width: 100%;
@@ -270,7 +271,7 @@ fieldset {
         margin: 1rem;
     }
 
-    /* Navigation */
+    /* Navigation bar adjustments*/
 
     ul li {
         display: inline;
@@ -293,7 +294,7 @@ fieldset {
         border: none;
     }
 
-    /*Content */
+    /*Content grid adujustments for reponsive, fluid*/
 
     .wrapperabout  {
         display: grid;
