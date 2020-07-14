@@ -187,8 +187,6 @@ fieldset {
   position:relative
 }
 
-
-
 @keyframes start {
     20% {
       transform:scale(0.5);
@@ -209,7 +207,7 @@ fieldset {
       transform-origin: 100px 80px;
     }
     50% {
-      transform: scale(0.5), translateY(10px);
+      transform: scale(0.5) translate(10px);
       background: none; 
       background-color: green;
       }
