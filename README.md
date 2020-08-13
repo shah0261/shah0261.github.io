@@ -1,0 +1,4 @@
+What I struggled with:
+
+Bootstrap is fairly new for mee, so is javascript. It takes alot more pracive for me to get as comfrtable as html oand css. I still have to learn alot for them too, but its kind of easier now after lits of assignments. 
+When i was making my nav bar, it wouldnt open in the mobile view after collapsing, it took me hours to figure it out. 
