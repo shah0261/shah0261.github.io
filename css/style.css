@@ -192,6 +192,10 @@ fieldset {
       border-radius: 10px;
   }
 
+.wrapperabout {
+    background-color: yellow;
+}
+
 /* Second View */
 
 @media (min-width: 768px) {
@@ -204,6 +208,10 @@ fieldset {
     .wrapperabout  {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-bottom: 15rem;
+    }
+    video {
+        margin-top: 5rem;
     }
 
     form {
@@ -212,6 +220,7 @@ fieldset {
 
     p {
         text-align: justify;
+        margin-top: 8rem;
     }
 
     .contactwrap {
