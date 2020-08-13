@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Arapey|Lora&display=swap');
+
+/* Mobile view designed first */
+
+main {
+    background-color: #fff4f3;
+    padding: 1rem;
+    font-family: 'Lora', serif;  
+}
+/*Navigation bar is set the same color as body for minimal design*/
+
+nav {
+    background-color: #fff4f3;
+}
+
+nav ul li {
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    font-family: 'Arapey', serif;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+ul li a {
+    color: #3d5361;
+}
+
+li:hover {
+    background-color: pink;
+}
+
+.current-page {
+    font-style: italic;
+}
+
+/* Header, Footer set as the body color */
+
+header {
+    background-color: #fff4f3;
+    padding: 1.75rem;
+    padding-bottom: 1.75rem;
+    text-align: center;   
+}
+
+footer {
+    background-color: #fff4f3;
+    padding: 2rem;
+}
+
+.top {
+    float: right;
+    background-color: #EAB8B8;
+    color: gray;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/*  Home, about Content */
+
+article {
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 5%;
+    background-color: white;
+    padding: 2rem;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 1rem;
+    color: #6b6b6b;
+}
+
+p {
+    margin: 1rem;
+    color: #6b6b6b;
+    text-align: justify;
+}
+
+.baker {
+    float: left;
+    margin: 1rem;
+}
+
+table, tr, th, td {
+    border: 2.5px solid gray;
+    margin: auto;
+    padding: 15px;
+    text-align: left;
+    margin-top: 2.5rem;
+}
+
+th, td {
+    margin: 15rem;
+}
+
+nav#footernv {
+    background-color: #fff4f3;
+}
+
+table {
+    text-align: center;
+}
+
+.articleabout {
+    margin: auto;
+}
+
+/* Contact content */
+
+.contactwrap {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#name, #email {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+}
+
+#message {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+}
+
+fieldset {
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    color: grey;
+}
+
+.visit {
+    font-style: normal;
+    font-family: 'Aclonica', sans-serif;
+    margin: 1rem;
+}
+
+.submit {
+    background-color: pink;
+    font-weight: bold;
+    font-family: 'Aclonica', sans-serif;
+    height: 2rem;
+    width: 15rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.submit:hover {
+    background-color: rgb(148, 93, 93);
+}
+
+.subscribe {
+    margin: 1rem;
+}
+
+.map {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+    height: 15rem;
+}
+.circle {
+  background-color: #f2b7bd;
+  border-radius:50%;
+  height:80px;
+  width:80px;
+  left: 120px;
+  position: absolute;
+  opacity: 30%;
+}
+.logocontainer {
+  height:100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:relative
+}
+/*Animation for a button of header*/
+
+@keyframes start {
+    20% {
+      transform:scale(0.5);
+    }
+  }
+  
+  @keyframes hover {
+    0% { 
+      transform: scale(1, 1);
+    }
+    50% { 
+      transform: scale(1.3, 1.3);
+    }
+  }
+  
+  @keyframes dramatic {
+    0% {
+      transform-origin: 100px 80px;
+    }
+    50% {
+      transform: scale(0.5) translate(10px);
+      background: none; 
+      background-color: green;
+      }
+  }
+  
+  @keyframes off {
+    0% {
+      background: none; 
+      background-color: grey;
+    }
+  }
+  
+  .circle {
+    animation-name: start;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .circle:hover {
+    animation-name: hover;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    }
+  
+  .circle:active {
+    animation-name :dramatic;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+
+  article img:hover { 
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  article img {
+      border-radius: 10px;
+  }
+
+/* Second View */
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* images fixing the responsivness*/
+
+    .bag, .birthday, .wedding, .cookies, .toast, .special {
+        width: 100%;
+        height: auto;
+    }
+
+    .baker {
+        float: left;
+        margin: 1rem;
+    }
+
+    /* Navigation bar adjustments*/
+
+    ul li {
+        display: inline;
+    }
+
+    nav {
+        width: 100%;
+        margin: auto;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: auto;
+        display: inline-block;
+        position: relative;
+        padding: 20px 50px;
+        padding-left: 10%; 
+        padding-right: 10%;
+        border: none;
+    }
+
+    /*Content grid adujustments for reponsive, fluid*/
+
+    .wrapperabout  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .contactwrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .circle {
+        background-color: #f2b7bd;
+        border-radius:50%;
+        height:80px;
+        width:80px;
+        left: 650px;
+        position: absolute;
+        opacity: 30%;
+      }
+}
