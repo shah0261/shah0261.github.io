@@ -2,81 +2,24 @@
 
 /* Mobile view designed first */
 
+.welcome {
+    background-color: yellow;
+    font-size: 50px;
+    margin: 5rem;
+    margin-top: 5rem;
+    line-height: 1.5;
+}
+
 main {
-    background-color: #fff4f3;
+    background-color: yellow;
     padding: 1rem;
     font-family: 'Lora', serif;  
 }
-/*Navigation bar is set the same color as body for minimal design*/
 
-nav {
-    background-color: #fff4f3;
-}
-
-nav ul li {
-    text-align: center;
-    list-style: none;
-    padding: 1rem;
-    font-family: 'Arapey', serif;
-    font-size: 1.25rem;
-    font-weight: bolder;
-}
-
-ul li a {
-    color: #3d5361;
-}
-
-li:hover {
-    background-color: pink;
-}
-
-.current-page {
-    font-style: italic;
-}
-
-/* Header, Footer set as the body color */
-
-header {
-    background-color: #fff4f3;
-    padding: 1.75rem;
-    padding-bottom: 1.75rem;
-    text-align: center;   
-}
-
-footer {
-    background-color: #fff4f3;
-    padding: 2rem;
-}
-
-.top {
-    float: right;
-    background-color: #EAB8B8;
-    color: gray;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
 
 /*  Home, about Content */
 
-article {
-    margin: 0.5rem;
-    text-align: center;
-    border-radius: 5%;
-    background-color: white;
-    padding: 2rem;
-}
 
-h3 {
-    font-weight: bold;
-    margin: 1rem;
-    color: #6b6b6b;
-}
-
-p {
-    margin: 1rem;
-    color: #6b6b6b;
-    text-align: justify;
-}
 
 .baker {
     float: left;
@@ -95,9 +38,6 @@ th, td {
     margin: 15rem;
 }
 
-nav#footernv {
-    background-color: #fff4f3;
-}
 
 table {
     text-align: center;
@@ -171,20 +111,14 @@ fieldset {
     height: 15rem;
 }
 .circle {
-  background-color: #f2b7bd;
+  background-color: #000000;
   border-radius:50%;
-  height:80px;
-  width:80px;
-  left: 120px;
+  height:180px;
+  width:180px;
+  left: 170px;
   position: absolute;
   opacity: 30%;
-}
-.logocontainer {
-  height:100px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  position:relative
+  top: 450px;
 }
 /*Animation for a button of header*/
 
@@ -254,46 +188,15 @@ fieldset {
 /* Second View */
 
 @media (min-width: 768px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
+    
     /* images fixing the responsivness*/
-
-    .bag, .birthday, .wedding, .cookies, .toast, .special {
-        width: 100%;
-        height: auto;
-    }
 
     .baker {
         float: left;
         margin: 1rem;
     }
 
-    /* Navigation bar adjustments*/
-
-    ul li {
-        display: inline;
-    }
-
-    nav {
-        width: 100%;
-        margin: auto;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-
-    nav ul li {
-        width: auto;
-        display: inline-block;
-        position: relative;
-        padding: 20px 50px;
-        padding-left: 10%; 
-        padding-right: 10%;
-        border: none;
-    }
-
+    
     /*Content grid adujustments for reponsive, fluid*/
 
     .wrapperabout  {
@@ -311,7 +214,7 @@ fieldset {
     }
 
     .circle {
-        background-color: #f2b7bd;
+        background-color: #000000;
         border-radius:50%;
         height:80px;
         width:80px;

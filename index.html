@@ -1,69 +1,42 @@
 <!DOCTYPE html>
 <html lang="zxx">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <title>Bakery | Home</title>
         <link rel="stylesheet" href="css/reset.css">
         <link href="css/style.css" rel="stylesheet">
     </head>
 <body>
-    <header>
-        <!--brands logo, designed by myself-->
-        <div class="logocontainer">
-            <div class="circle"></div>
-            <img class="logo" src="img/resizeimage.png" alt="logo">
-        </div>
-    </header>
-        <!--Navigation bar contains the home which has the products and about and contact-->
-    <nav>
-        <ul>
-            <li><a class="current-page" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" width="60" height="40" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     <main class="wrapper">
-        <div>
-            <!--the available goodies in the index/home page -->
-            <article>
-                <h3>Baguette</h3>
-                <img class="bag" src="img/bag.jpg" alt="logo">
-                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </article>
-            <article>
-                <h3>Toast</h3>
-                <img class="toast" src="img/toast.jpg" alt="logo">
-                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </article>
+        <div class=welcome>
+            Welcome! My name is Melika Shahbazi, I am a visual artist.
+            Lets work together! 
         </div>
-        <div>
-            <article>
-                <h3>Birthday Cakes</h3>
-                <img class="birthday" src="img/birthday.jpg" alt="logo">
-                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </article>
-            <article>
-                <h3>Wedding Cakes</h3>
-                <img class="wedding" src="img/wedding.jpg" alt="logo">
-                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </article>
-        </div>
-        <div>
-            <article>
-                <h3>Choclate Chip Cookies</h3>
-                <img class="cookies" src="img/cookies.png" alt="logo">
-                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </article>
-            <article>
-                <h3>Your Special!</h3>
-                <img class="special" src="img/special.jpg" alt="logo">
-                <p>Beaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </article>
-        </div>
+        <div class="circle"></div>
     </main>
     <!--Top and Copyright information-->
-    <footer>
-        <a class="top" href="#top">BACK TO TOP!</a>
-        <p>Copyrights - MySite 2020</p>
-    </footer>
+    
 </body>
 </html>
