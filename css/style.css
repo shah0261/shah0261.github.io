@@ -16,14 +16,20 @@ main {
     font-family: 'Lora', serif;  
 }
 
+video {
+    width: 85%;
+    height: auto;
+    margin: 2rem;
+}
 
 /*  Home, about Content */
 
 
-
-.baker {
-    float: left;
-    margin: 1rem;
+.me {
+    width: 50%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 3%;
 }
 
 table, tr, th, td {
@@ -87,7 +93,7 @@ fieldset {
 }
 
 .submit {
-    background-color: pink;
+    background-color: rgb(44, 44, 44);
     font-weight: bold;
     font-family: 'Aclonica', sans-serif;
     height: 2rem;
@@ -95,6 +101,7 @@ fieldset {
     margin-left: 2rem;
     border-radius: 10px;
     border: none;
+    color: white;
 }
 .submit:hover {
     background-color: rgb(148, 93, 93);
@@ -188,20 +195,19 @@ fieldset {
 /* Second View */
 
 @media (min-width: 768px) {
-    
-    /* images fixing the responsivness*/
 
-    .baker {
-        float: left;
-        margin: 1rem;
+    .welcome {
+        padding-bottom: 21.5rem;
+        margin: 15rem;
     }
-
     
-    /*Content grid adujustments for reponsive, fluid*/
-
     .wrapperabout  {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin-top: 10rem;
     }
 
     p {
@@ -216,10 +222,16 @@ fieldset {
     .circle {
         background-color: #000000;
         border-radius:50%;
-        height:80px;
-        width:80px;
-        left: 650px;
+        height:280px;
+        width:280px;
+        left: 950px;
         position: absolute;
         opacity: 30%;
+      }
+      .articleabout {
+          margin-top: 5rem;
+          font-size: 25px;
+          line-height: 1.7;
+          margin-right: 2rem;
       }
 }
